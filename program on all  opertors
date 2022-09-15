@@ -1,0 +1,123 @@
+program  to explain all operators 
+
+//Arithmetic Operators
+
+
+#include <stdio.h>
+int main()
+{
+    int a = 10,b = 6 ,c;
+    //Arithmetic Operators
+    
+    c = a+b;
+    printf("a+b = %d \n",c);
+    c = a-b;
+    printf("a-b = %d \n",c);
+    c = a*b;
+    printf("a*b = %d \n",c);
+    c = a/b;
+    printf("a/b = %d \n",c);
+    c = a%b;
+    return 0;
+}
+
+
+output:
+a+b = 16 
+a-b = 4 
+a*b = 60 
+a/b = 1 
+----------------------------------------------------------------- 
+//Increment and Decrement Operators
+
+
+#include <stdio.h>
+int main()
+{
+   int a = 10,b = 6,c =5, d=9;
+    
+    printf("divided by b = %d \n",c);
+    printf("++a = %d \n", ++a);
+    printf("--b = %d \n", --b);
+    printf("++c = %f \n", ++c);
+    printf("--d = %f \n", --d);
+return 0;
+}
+ output :
+ divided by b = 5 
+++a = 11 
+--b = 5 
+++c = 0.000000 
+--d = 0.000000 
+----------------------------------------------------------------
+ // Assignment Operators
+
+
+#include <stdio.h>
+int main()
+{
+   int a = 8 ,b ;
+    
+    b = a;      
+    printf("b = %d\n", b);
+    b += a;     
+    printf("b = %d\n", b);
+    b-= a;     
+    printf("b = %d\n", b);
+    b*= a;     
+    printf("b = %d\n", b);
+    b/= a;    
+    printf("b = %d\n", b);
+    b%= a;     
+    printf("b = %d\n", b);
+    
+}
+ output:
+
+b = 8
+b = 16
+b = 8
+b = 64
+b = 8
+b = 0
+
+-------------------------------------------------------------------
+//logical operator
+
+#include <stdio.h>
+int main()
+{
+   int a = 10,b = 6, d=12.05 ,c , result;
+   result = (a == b) && (d > b);
+    printf("(a == b) && (d > b) is %d \n", result);
+
+    result = (a == b) && (d < b);
+    printf("(a == b) && (d< b) is %d \n", result);
+
+    result = (a == b) || (d< b);
+    printf("(a == b) || (d < b) is %d \n", result);
+
+    result = (a != b) || (d < b);
+    printf("(a != b) || (d < b) is %d \n", result);
+
+    result = !(a != b);
+    printf("!(a != b) is %d \n", result);
+
+    result = !(a == b);
+    printf("!(a == b) is %d \n", result);
+
+
+
+    
+    return 0;
+}
+
+output:
+
+(a == b) && (d > b) is 0 
+(a == b) && (d< b) is 0 
+(a == b) || (d < b) is 0 
+(a != b) || (d < b) is 1 
+!(a != b) is 0 
+!(a == b) is 1 
+
